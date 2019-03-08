@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import {Platform,Button, StyleSheet, Text, View,Image} from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
+const InitialNavigator = createSwitchNavigator({
+  Splash: SplashScreen});
+
+export default createAppContainer(InitialNavigator);
 class WelcomeScreen extends React.Component{
   render() {
     const {navigate} = this.props.navigation;

@@ -1,10 +1,16 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,Image} from 'react-native';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator, createSwitchNavigator, createAppContainer } from 'react-navigation';
+import AppNavigator from './AppNavigator';
 
-export default class App extends Component{
+export default class App extends React.Component{
+
+
   render() {
+
     return (
+      <AppNavigator/>
+
       <View style={styles.container}>
         <Image
         source={require('./img/logo.jpg')}

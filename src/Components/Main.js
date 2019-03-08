@@ -4,13 +4,6 @@ import {Platform,StyleSheet,Text,View} from 'react-native';
 import {Button,Icon,PricingCard} from 'react-native-elements';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 
-const MainNavigator = createStackNavigator({
-  Home: {screen: SearchBook},
-  BookInfo: {screen: BookInfo},
-});
-
-const App = createAppContainer(MainNavigator);
-
 export default class SearchBook extends Component {
   render() {
     return (
